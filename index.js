@@ -12,7 +12,7 @@ class Withdrawal {
 
 }
 
-class Depost {
+class Deposit {
 
   constructor(amount){
     this.amount = amount;
@@ -37,5 +37,10 @@ console.log('Transaction 1:', t1);
 t2 = new Withdrawal(9.99);
 t2.commit();
 console.log('Transaction 2:', t2);
+
+t3 = new Deposit(50.00);
+t3.commit();
+console.log('Transaction 3:', t3);
+
 
 console.log('Balance:', balance);
